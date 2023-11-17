@@ -36,6 +36,8 @@ public class AuthorController {
     @GetMapping("/authors/{id}")
     public Author getAuthorById(@PathVariable int id){
         log.debug("AuthorController: getAuthorById called with id: " + id);
-        return authorService.findById(id);
+        Author author = authorService.findById(id);
+        log.debug(author.toString());
+        return author;
     }
 }
