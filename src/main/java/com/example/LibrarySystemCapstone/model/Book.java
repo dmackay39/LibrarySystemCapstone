@@ -1,5 +1,6 @@
 package com.example.LibrarySystemCapstone.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -12,8 +13,8 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Book extends LendableMaterial{
 
     @Id
@@ -21,6 +22,7 @@ public class Book extends LendableMaterial{
     private Integer id;
 
     @ManyToOne
+    @JsonBackReference
     private Author author;
 
 }
