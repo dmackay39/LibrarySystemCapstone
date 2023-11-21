@@ -1,4 +1,4 @@
-package com.example.LibrarySystemCapstone.model;
+package com.example.librarysystemcapstone.model;
 
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

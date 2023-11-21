@@ -1,7 +1,7 @@
-package com.example.LibrarySystemCapstone.controller;
+package com.example.librarysystemcapstone.controller;
 
-import com.example.LibrarySystemCapstone.model.Book;
-import com.example.LibrarySystemCapstone.service.IBookService;
+import com.example.librarysystemcapstone.model.Book;
+import com.example.librarysystemcapstone.service.IBookService;
 import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

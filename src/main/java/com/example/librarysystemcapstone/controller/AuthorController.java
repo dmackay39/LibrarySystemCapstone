@@ -1,13 +1,11 @@
-package com.example.LibrarySystemCapstone.controller;
+package com.example.librarysystemcapstone.controller;
 
-import com.example.LibrarySystemCapstone.model.Author;
-import com.example.LibrarySystemCapstone.service.IAuthorService;
+import com.example.librarysystemcapstone.model.Author;
+import com.example.librarysystemcapstone.service.IAuthorService;
 import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -39,5 +37,10 @@ public class AuthorController {
         Author author = authorService.findById(id);
         log.debug(author.toString());
         return author;
+    }
+
+    @PostMapping("/authors")
+    public Author createAuthor(@RequestBody Author author){
+        return authorService.save(author);
     }
 }

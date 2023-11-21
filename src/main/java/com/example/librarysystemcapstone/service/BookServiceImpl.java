@@ -1,7 +1,7 @@
-package com.example.LibrarySystemCapstone.service;
+package com.example.librarysystemcapstone.service;
 
-import com.example.LibrarySystemCapstone.model.Book;
-import com.example.LibrarySystemCapstone.repository.IBookRepository;
+import com.example.librarysystemcapstone.model.Book;
+import com.example.librarysystemcapstone.repository.IBookRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

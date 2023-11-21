@@ -1,6 +1,6 @@
-package com.example.LibrarySystemCapstone.repository;
+package com.example.librarysystemcapstone.repository;
 
-import com.example.LibrarySystemCapstone.model.Author;
+import com.example.librarysystemcapstone.model.Author;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

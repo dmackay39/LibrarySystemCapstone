@@ -1,4 +1,4 @@
-package com.example.LibrarySystemCapstone.model;
+package com.example.librarysystemcapstone.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;

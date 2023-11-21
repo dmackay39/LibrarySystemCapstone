@@ -1,7 +1,7 @@
-package com.example.LibrarySystemCapstone.service;
+package com.example.librarysystemcapstone.service;
 
-import com.example.LibrarySystemCapstone.model.Author;
-import com.example.LibrarySystemCapstone.repository.IAuthorRepository;
+import com.example.librarysystemcapstone.model.Author;
+import com.example.librarysystemcapstone.repository.IAuthorRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -40,5 +40,10 @@ public class AuthorServiceImpl implements IAuthorService{
         authorsIts.forEach(authors::add);
         log.debug("AuthorServiceImpl: findByNameContains called for name: " + filter);
         return authors;
+    }
+
+    @Override
+    public Author save(Author author) {
+        return authorRepository.save(author);
     }
 }

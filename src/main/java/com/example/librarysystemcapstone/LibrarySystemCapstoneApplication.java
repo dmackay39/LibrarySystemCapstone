@@ -1,4 +1,4 @@
-package com.example.LibrarySystemCapstone;
+package com.example.librarysystemcapstone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

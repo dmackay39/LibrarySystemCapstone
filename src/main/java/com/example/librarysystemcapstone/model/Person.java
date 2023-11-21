@@ -1,4 +1,4 @@
-package com.example.LibrarySystemCapstone.model;
+package com.example.librarysystemcapstone.model;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.MappedSuperclass;

@@ -1,6 +1,6 @@
-package com.example.LibrarySystemCapstone.controller;
+package com.example.librarysystemcapstone.controller;
 
-import com.example.LibrarySystemCapstone.model.Author;
+import com.example.librarysystemcapstone.model.Author;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

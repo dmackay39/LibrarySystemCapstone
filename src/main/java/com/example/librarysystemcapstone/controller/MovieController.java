@@ -1,13 +1,11 @@
-package com.example.LibrarySystemCapstone.controller;
+package com.example.librarysystemcapstone.controller;
 
-import com.example.LibrarySystemCapstone.model.Movie;
-import com.example.LibrarySystemCapstone.service.IMovieService;
+import com.example.librarysystemcapstone.model.Movie;
+import com.example.librarysystemcapstone.service.IMovieService;
 import jakarta.websocket.server.PathParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,5 +35,20 @@ public class MovieController {
     public Movie getMovieById(@PathVariable int id){
         log.debug("MovieController: getMoviesById called with id: " + id);
         return movieService.findById(id);
+    }
+
+    @PostMapping("/movies")
+    public Movie createMovie(@RequestBody Movie movie){
+        return movieService.save(movie);
+    }
+
+    @PutMapping("/movies")
+    public Movie updateMovie(@RequestBody Movie movie){
+        return movieService.save(movie);
+    }
+
+    @DeleteMapping("/movies/{id}")
+    public void deleteMovieById(@PathVariable int id){
+        movieService.deleteById(id);
     }
 }

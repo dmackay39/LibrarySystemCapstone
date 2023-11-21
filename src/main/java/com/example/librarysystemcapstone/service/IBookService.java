@@ -1,6 +1,6 @@
-package com.example.LibrarySystemCapstone.service;
+package com.example.librarysystemcapstone.service;
 
-import com.example.LibrarySystemCapstone.model.Book;
+import com.example.librarysystemcapstone.model.Book;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.example.LibrarySystemCapstone.service;
+package com.example.librarysystemcapstone.service;
 
-import com.example.LibrarySystemCapstone.model.Movie;
-import com.example.LibrarySystemCapstone.repository.IMovieRepository;
+import com.example.librarysystemcapstone.model.Movie;
+import com.example.librarysystemcapstone.repository.IMovieRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -40,5 +40,15 @@ public class MovieServiceImpl implements IMovieService{
         moviesIts.forEach(movies::add);
         log.debug("MovieServiceImpl: findByTitleContains called with title: " + filter);
         return movies;
+    }
+
+    @Override
+    public Movie save(Movie movie) {
+        return movieRepository.save(movie);
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+        movieRepository.deleteById(id);
     }
 }
